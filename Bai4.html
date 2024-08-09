@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="stylehw4.css"> -->
+  <style>
+    body,
+    html {
+      background-color: black;
+      color: white;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    .Newprj {
+      background-color: #222;
+      border-radius: 10px;
+      width: 280px;
+      height: 260px;
+      padding: 20px;
+    }
+    #firstline {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    p{
+      opacity: 60%;
+      margin-bottom: 15px;
+      margin-top: 0;
+    }
+    .Nameprj,.framework{
+      font-size:18px;
+      margin-bottom: 8px;
+    }
+    input {
+      width: 95%;
+      padding: 8px;
+      border: 2px solid #444;
+      border-radius: 8px;
+      background-color: #333;
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    select{
+      width: 286px;
+      padding: 8px;
+      border: 2px solid #444;
+      border-radius: 8px;
+      background-color: #333;
+      color: #f0f0f0;
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    .confirm{
+      display: flex;
+      justify-content: space-between;
+    }
+    #cancel, #deploy{
+      background-color: #333;
+      border: 2px solid #444;
+      width: 85px;
+      height: 35px;
+      border-radius: 5px;
+      color: #f0f0f0;
+    }
+    #deploy{
+      background-color: #fff;
+      color: black;
+    }
+    #cancel,#deploy:hover{
+      cursor: pointer;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+<div class="Newprj">
+  <h2 id="firstline">Create project</h2>
+  <p>Deploy your new project in one-click</p>
+  <form>
+    <div class="Nameprj"><b>Name</b></div>
+    <input id="name" placeholder="Name of your project" />
+
+    <div class="framework"><b>Framework</b></div>
+    <div class="select">
+      <select id="framework">
+        <option value="">Select</option>
+        <option value="">C++</option>
+        <option value="">C#</option>
+        <option value="">JS</option>
+        <option value="">TS</option>
+      </select>
+    </div>
+
+    <div class="confirm">
+      <button id="cancel">Cancel</button>
+      <button id="deploy">Deploy</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
